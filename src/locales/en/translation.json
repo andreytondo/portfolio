@@ -1,0 +1,75 @@
+{
+  "portfolio": {
+    "username": "Andrey Tondo",
+    "greeting": "Hello!",
+    "description": "I build robust and scalable web apps 🚀 for multiple uses. From microservices to containerized stacks and automation, I turn complex problems into reliable, maintainable solutions."
+  },
+  "menu": {
+    "home": "Home",
+    "skills": "Skills",
+    "experience": "Work Experiences",
+    "opensource": "Open Source",
+    "achievements": "Achievements",
+    "blogs": "Blogs",
+    "talks": "Talks",
+    "resume": "Resume",
+    "contact": "Contact Me"
+  },
+  "skills": {
+    "title": "What I do",
+    "subTitle": "Building robust and scalable web applications, from microservices to containerized stacks and automation",
+    "skill1": "⚡ Full stack development: designing interactive frontends and performant backends with scalable architectures",
+    "skill2": "⚡ Cloud & integrations: implementing APIs, databases, and services",
+    "skill3": "⚡ System design & architecture: leading software architecture decisions, mentoring teams, and ensuring maintainable solutions"
+  },
+  "education": {
+    "title": "Education", 
+    "utfpr": {
+      "schoolName": "Universidade Tecnológica Federal do Paraná",
+      "subHeader": " Technologist in Systems Analysis and Development",
+      "duration": "March 2023 - July 2026",
+      "desc": "Gained practical experience through projects and internships, enhancing my skills in full stack development, system architecture and project management.",
+      "bullet1": "Developed a wide range of different projects using various technologies.",
+      "bullet2": "Collaborated with cross-functional teams to deliver high-quality software solutions, ensuring adherence to best practices and coding standards."
+    }
+  },
+  "work": {
+    "title": "Work Experiences", 
+    "ids": {
+      "role": "Full Stack Developer → Software Architect",
+      "company": "IDS Software e Assessoria",
+      "date": "June 2022 – Present",
+      "desc": "Started as a Full Stack Developer building end-to-end web applications, later promoted to Software Architect to lead architecture strategy, define best practices, and guide development teams in delivering robust, scalable software solutions.",
+      "bullet1": "Built full stack applications and backend services, ensuring performance and maintainability.",
+      "bullet2": "Led software architecture decisions and mentored teams to implement scalable, efficient systems."
+    }
+  },
+  "bigProjects": {
+    "title": "Other Projects",
+    "subtitle": "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+    "idr": {
+      "name": "IDR",
+      "desc": "Software development for the Paraná Institute of Rural Development (IDR-Paraná) through the Bowser extension project at the Federal University of Technology – Paraná (UTFPR).",
+      "visit": "Visit Website"
+    },
+    "dainf": {
+      "name": "DAINF-UTFPR",
+      "desc": "Development of an inventory and management system for the Academic Department of Computer Science of the Federal University of Technology (DAINF-UTFPR), streamlining equipment tracking, resource allocation, and lab operations for improved efficiency.",
+      "visit": "Visit Website"
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "Feel free to download my resume"
+  },
+  "contact": {
+    "title": "Reach Out to me!",
+    "subtitle": "Discuss a project or just want to say hi?",
+    "number": "+55 (46) 9 9137-9026",
+    "email": "andreytondo0408@gmail.com"
+  },
+  "footer": {
+    "madeby": "Crafted by Andrey Tondo",
+    "copy": "Theme by developerFolio"
+  }
+}
