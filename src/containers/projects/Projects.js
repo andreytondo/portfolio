@@ -1,4 +1,5 @@
 import { Suspense, lazy, useContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../../components/button/Button";
 import Loading from "../../containers/loading/Loading";
 import StyleContext from "../../contexts/StyleContext";
@@ -13,6 +14,7 @@ export default function Projects() {
   const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const getRepoData = () => {
@@ -46,7 +48,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">{t("opensource.title")}</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
