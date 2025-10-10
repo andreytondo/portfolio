@@ -40,13 +40,13 @@
       "company": "IDS Software e Assessoria",
       "date": "Junho 2022 – Presente",
       "desc": "Comecei como Desenvolvedor Full Stack construindo aplicações web completas e depois fui promovido a Arquiteto de Software para liderar a estratégia de arquitetura, definir boas práticas e orientar equipes de desenvolvimento na entrega de soluções robustas e escaláveis.",
-      "bullet1": "Construiu aplicações full stack e serviços backend, garantindo performance e facilidade de manutenção.",
-      "bullet2": "Liderou decisões de arquitetura de software e orientou equipes para implementar sistemas escaláveis e eficientes."
+      "bullet1": "Construí aplicações full stack e serviços backend, garantindo performance e facilidade de manutenção.",
+      "bullet2": "Liderei decisões de arquitetura de software e orientei equipes para implementar sistemas escaláveis e eficientes."
     }
   },
   "bigProjects": {
     "title": "Outros Projetos",
-    "subtitle": "ALGUMAS STARTUPS E EMPRESAS QUE AJUDEI A CRIAR SUA TECNOLOGIA",
+    "subtitle": "PROJETOS QUE COLABOREI DIRETAMENTE NA CONSTRUÇÃO",
     "idr": {
       "name": "IDR",
       "desc": "Desenvolvimento de software para o Instituto Paranaense de Desenvolvimento Rural (IDR-Paraná) através do projeto de extensão Bowser na Universidade Tecnológica Federal do Paraná (UTFPR).",
@@ -64,12 +64,13 @@
   },
   "contact": {
     "title": "Entre em contato!",
-    "subtitle": "Quer discutir um projeto ou apenas dizer oi?",
+    "subtitle": "Quer discutir um projeto? Entre em contato.",
     "number": "+55 (46) 9 9137-9026",
     "email": "andreytondo0408@gmail.com"
   },
   "opensource": {
-    "title": "Projetos Open Source"
+    "title": "Projetos Open Source",
+    "buttonText": "Veja Mais"
   },
   "footer": {
     "madeby": "Desenvolvido por Andrey Tondo",

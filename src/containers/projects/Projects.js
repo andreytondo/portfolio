@@ -62,7 +62,7 @@ export default function Projects() {
             })}
           </div>
           <Button
-            text={"More Projects"}
+            text={t("opensource.buttonText")}
             className="project-button"
             href={socialMediaLinks.github}
             newTab={true}

@@ -69,7 +69,8 @@
     "email": "andreytondo0408@gmail.com"
   },
   "opensource": {
-    "title": "Open Source Projects"
+    "title": "Open Source Projects",
+    "buttonText": "View More"
   },
   "footer": {
     "madeby": "Crafted by Andrey Tondo",
