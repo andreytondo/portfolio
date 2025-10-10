@@ -65,7 +65,7 @@
 }
 
 .project-card-footer span.project-tag {
-  background: $buttonColor;
+  background: $buttonColor!important;
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
@@ -80,6 +80,10 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+
+  &:hover {
+    background: $buttonHover!important;
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,67 @@
+@import "../../_globalColor";
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.language-selector__button {
+    border: 1px solid $buttonColor;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.language-selector__button:hover {
+    background: $darkBoxShadow2;
+    color: $buttonColor;
+}
+
+.language-selector__dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: $lightBackground1;
+    border: 1px solid $buttonColor;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    padding: 4px 0;
+}
+
+.language-selector__option {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: $textColor;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.language-selector__option:hover {
+    background: $buttonColor;
+    color: $lightBackground1;
+}
+
+@media (max-width: 768px) {
+
+    .language-selector__button,
+    .language-selector__option {
+        font-size: 0.938rem;
+        padding: 8px 12px;
+    }
+
+    .language-selector__dropdown {
+        min-width: 100px;
+    }
+}

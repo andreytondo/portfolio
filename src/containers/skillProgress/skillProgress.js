@@ -1,11 +1,12 @@
-import React from "react";
-import "./Progress.scss";
-import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import { illustration, techStack } from "../../portfolio";
+import "./Progress.scss";
 
 export default function StackProgress() {
+  const { t } = useTranslation();
   if (techStack.viewSkillBars) {
     return (
       <Fade bottom duration={1000} distance="20px">
@@ -18,7 +19,7 @@ export default function StackProgress() {
               };
               return (
                 <div key={i} className="skill">
-                  <p>{exp.Stack}</p>
+                  <p>{t(exp.Stack)}</p>
                   <div className="meter">
                     <span style={progressStyle}></span>
                   </div>

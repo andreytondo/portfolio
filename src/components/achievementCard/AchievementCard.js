@@ -1,7 +1,9 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
+  const { t } = useTranslation();
+  
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
@@ -15,17 +17,17 @@ export default function AchievementCard({cardInfo, isDark}) {
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
         <img
-          src={cardInfo.image}
+          src={t(cardInfo.image)}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="card-image"
         ></img>
       </div>
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
-          {cardInfo.title}
+          {t(cardInfo.title)}
         </h5>
         <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
+          {t(cardInfo.description)}
         </p>
       </div>
       <div className="certificate-card-footer">
@@ -38,7 +40,7 @@ export default function AchievementCard({cardInfo, isDark}) {
               }
               onClick={() => openUrlInNewTab(v.url, v.name)}
             >
-              {v.name}
+              {t(v.name)}
             </span>
           );
         })}

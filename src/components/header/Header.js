@@ -1,21 +1,24 @@
-import React, {useContext} from "react";
+import { useContext } from "react";
 import Headroom from "react-headroom";
-import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import { useTranslation } from 'react-i18next';
 import StyleContext from "../../contexts/StyleContext";
 import {
-  greeting,
-  workExperiences,
-  skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
   achievementSection,
-  resumeSection
+  blogSection,
+  greeting,
+  openSource,
+  resumeSection,
+  skillsSection,
+  talkSection,
+  workExperiences
 } from "../../portfolio";
+import LanguageSelector from "../languageSelector/languageSelector";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import "./Header.scss";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const { t } = useTranslation();
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -29,7 +32,7 @@ function Header() {
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
+          <span className="logo-name">{t(greeting.username)}</span>
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -43,41 +46,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">{t("menu.skills")}</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">{t("menu.experience")}</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">{t("menu.opensource")}</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">{t("menu.achievements")}</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">{t("menu.blogs")}</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks">{t("menu.talks")}</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume">{t("menu.resume")}</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">{t("menu.contact")}</a>
+          </li>
+          <li>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>
+              <LanguageSelector />
+            </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

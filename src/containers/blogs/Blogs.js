@@ -1,10 +1,12 @@
-import React, {useState, useEffect, useContext} from "react";
-import "./Blog.scss";
+import { useContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 import BlogCard from "../../components/blogCard/BlogCard";
-import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { blogSection } from "../../portfolio";
+import "./Blog.scss";
 export default function Blogs() {
+  const { t } = useTranslation();
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
@@ -51,13 +53,13 @@ export default function Blogs() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="blogs">
         <div className="blog-header">
-          <h1 className="blog-header-text">{blogSection.title}</h1>
+          <h1 className="blog-header-text">{t(blogSection.title)}</h1>
           <p
             className={
               isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
             }
           >
-            {blogSection.subtitle}
+            {t(blogSection.subtitle)}
           </p>
         </div>
         <div className="blog-main-div">
@@ -72,8 +74,8 @@ export default function Blogs() {
                       blog={{
                         url: blog.url,
                         image: blog.image,
-                        title: blog.title,
-                        description: blog.description
+                        title: t(blog.title),
+                        description: t(blog.description)
                       }}
                     />
                   );
@@ -85,7 +87,7 @@ export default function Blogs() {
                       isDark={isDark}
                       blog={{
                         url: blog.link,
-                        title: blog.title,
+                        title: t(blog.title),
                         description: extractTextContent(blog.content)
                       }}
                     />

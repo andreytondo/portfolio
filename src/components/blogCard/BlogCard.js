@@ -1,7 +1,9 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import "./BlogCard.scss";
 
 export default function BlogCard({blog, isDark}) {
+  const { t } = useTranslation();
+
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
@@ -21,10 +23,10 @@ export default function BlogCard({blog, isDark}) {
           href="#blog"
         >
           <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>
-            {blog.title}
+            {t(blog.title)}
           </h3>
           <p className={isDark ? "small-dark small" : "small"}>
-            {blog.description}
+            {t(blog.description)}
           </p>
           <div className="go-corner">
             <div className="go-arrow">→</div>

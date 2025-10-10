@@ -1,41 +1,43 @@
-import React, {createRef, useContext} from "react";
-import {Fade, Slide} from "react-reveal";
-import "./EducationCard.scss";
+import { createRef, useContext } from "react";
+import { useTranslation } from "react-i18next";
+import { Fade, Slide } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import "./EducationCard.scss";
 
 export default function EducationCard({school}) {
+  const { t } = useTranslation();
   const imgRef = createRef();
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li key={i} className="subTitle">
-            {item}
+            {t(item)}
           </li>
         ))
       : null;
   };
   const {isDark} = useContext(StyleContext);
 
-  if (!school.logo)
-    console.error(`Image of ${school.name} is missing in education section`);
+  if (!t(school.logo))
+    console.error(`Image of ${t(school.name)} is missing in education section`);
   return (
     <div>
       <Fade left duration={1000}>
         <div className="education-card">
-          {school.logo && (
+          {t(school.logo) && (
             <div className="education-card-left">
               <img
                 crossOrigin={"anonymous"}
                 ref={imgRef}
                 className="education-roundedimg"
-                src={school.logo}
-                alt={school.schoolName}
+                src={t(school.logo)}
+                alt={t(school.schoolName)}
               />
             </div>
           )}
           <div className="education-card-right">
-            <h5 className="education-text-school">{school.schoolName}</h5>
+            <h5 className="education-text-school">{t(school.schoolName)}</h5>
 
             <div className="education-text-details">
               <h5
@@ -45,16 +47,16 @@ export default function EducationCard({school}) {
                     : "education-text-subHeader"
                 }
               >
-                {school.subHeader}
+                {t(school.subHeader)}
               </h5>
               <p
                 className={`${
                   isDark ? "dark-mode" : ""
                 } education-text-duration`}
               >
-                {school.duration}
+                {t(school.duration)}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
+              <p className="education-text-desc">{t(school.desc)}</p>
               <div className="education-text-bullets">
                 <ul>
                   <GetDescBullets descBullets={school.descBullets} />

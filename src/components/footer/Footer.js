@@ -1,26 +1,21 @@
-import React, {useContext} from "react";
-import "./Footer.scss";
-import {Fade} from "react-reveal";
+import { useContext } from "react";
 import emoji from "react-easy-emoji";
+import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import "./Footer.scss";
 
 export default function Footer() {
+  const { t } = useTranslation();
   const {isDark} = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️ by DeveloperFolio Team")}
+          {/* <small>{emoji(t("footer.madeby"))}</small> */}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
-          <a
-            href="https://github.com/saadpasta/developerFolio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            developerFolio
-          </a>
+          <small>{emoji(t("footer.copy"))}</small>
         </p>
       </div>
     </Fade>
