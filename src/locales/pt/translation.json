@@ -2,6 +2,7 @@
   "portfolio": {
     "username": "Andrey Tondo",
     "greeting": "Olá!",
+    "resumeLink": "https://drive.google.com/file/d/1xkN1q4ThIsW7f4iSEhL9W47VjxSTFZsf/view?usp=sharing",
     "description": "Eu construo aplicações web robustas e escaláveis 🚀 de vários usos. De microserviços a stacks conteinerizados e automação, transformo problemas complexos em soluções confiáveis e fáceis de manter."
   },
   "menu": {
@@ -60,7 +61,8 @@
   },
   "resume": {
     "title": "Currículo",
-    "subtitle": "Sinta-se à vontade para baixar meu currículo"
+    "subtitle": "Sinta-se à vontade para baixar meu currículo",
+    "buttonText": "Currículo"
   },
   "contact": {
     "title": "Entre em contato!",

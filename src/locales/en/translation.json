@@ -2,6 +2,7 @@
   "portfolio": {
     "username": "Andrey Tondo",
     "greeting": "Hello!",
+    "resumeLink": "https://drive.google.com/file/d/12Cn3OONveY6abfusffUIiInV4JL6_TIF/view?usp=sharing",
     "description": "I build robust and scalable web apps 🚀 for multiple uses. From microservices to containerized stacks and automation, I turn complex problems into reliable, maintainable solutions."
   },
   "menu": {
@@ -60,7 +61,8 @@
   },
   "resume": {
     "title": "Resume",
-    "subtitle": "Feel free to download my resume"
+    "subtitle": "Feel free to download my resume",
+    "buttonText": "Resume"
   },
   "contact": {
     "title": "Reach Out to me!",

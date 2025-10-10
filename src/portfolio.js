@@ -23,7 +23,7 @@ const greeting = {
   username: "portfolio.username",
   title: "portfolio.greeting",
   subTitle: emoji("portfolio.description"),
-  resumeLink: "", // Set to empty to hide the button
+  resumeLink: "portfolio.resumeLink", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -270,7 +270,7 @@ const resumeSection = {
   subtitle: "resume.subtitle",
 
   // Please Provide with Your Podcast embeded Link
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
