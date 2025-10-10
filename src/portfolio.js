@@ -136,7 +136,7 @@ const bigProjects = {
   subtitle: "bigProjects.subtitle",
   projects: [
     {
-      image: require("./assets/images/idrLogo.jpg"),
+      image: require("./assets/images/idrLogo2.jpg"),
       projectName: "bigProjects.idr.name",
       projectDesc: "bigProjects.idr.desc",
       footerLink: [

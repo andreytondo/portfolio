@@ -1,9 +1,9 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
-import "./Project.scss";
+import { Suspense, lazy, useContext, useEffect, useState } from "react";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import StyleContext from "../../contexts/StyleContext";
+import { openSource, socialMediaLinks } from "../../portfolio";
+import "./Project.scss";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -16,7 +16,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
+      fetch("profile.json")
         .then(result => {
           if (result.ok) {
             return result.json();
