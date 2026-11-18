@@ -19,35 +19,47 @@
   "skills": {
     "title": "O que eu faço",
     "subTitle": "Construindo aplicações web robustas e escaláveis, de microserviços a stacks conteinerizados e automação",
-    "skill1": "⚡ Desenvolvimento full stack: criando frontends interativos e backends performáticos com arquiteturas escaláveis",
+    "skill1": "⚡ Desenvolvimento full stack: Java/Spring Boot, Angular, React/Next.js e TypeScript, criando frontends interativos e backends performáticos com arquiteturas escaláveis",
     "skill2": "⚡ Nuvem & integrações: implementando APIs, bancos de dados e serviços",
     "skill3": "⚡ Design e arquitetura de sistemas: liderando decisões de arquitetura de software, orientando equipes e garantindo soluções fáceis de manter"
   },
   "education": {
-    "title": "Educação", 
+    "title": "Educação",
     "utfpr": {
       "schoolName": "Universidade Tecnológica Federal do Paraná",
       "subHeader": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
-      "duration": "Março 2023 - Julho 2026",
+      "duration": "Março 2023 - Dezembro 2026",
       "desc": "Adquiri experiência prática por meio de projetos e estágios, aprimorando minhas habilidades em desenvolvimento full stack, arquitetura de sistemas e gestão de projetos.",
       "bullet1": "Desenvolvi diversos projetos utilizando várias tecnologias.",
       "bullet2": "Colaborei com equipes multifuncionais para entregar soluções de software de alta qualidade, garantindo aderência às melhores práticas e padrões de código."
     }
   },
   "work": {
-    "title": "Experiências Profissionais", 
-    "ids": {
-      "role": "Desenvolvedor Full Stack → Arquiteto de Software",
+    "title": "Experiências Profissionais",
+    "cit": {
+      "role": "Desenvolvedor Full Stack",
+      "company": "CI&T",
+      "date": "Março 2026 – Presente",
+      "desc": "Desenvolvedor Full Stack construindo e evoluindo aplicações web."
+    },
+    "idsArchitect": {
+      "role": "Arquiteto de Software",
       "company": "IDS Software e Assessoria",
-      "date": "Junho 2022 – Presente",
-      "desc": "Comecei como Desenvolvedor Full Stack construindo aplicações web completas e depois fui promovido a Arquiteto de Software para liderar a estratégia de arquitetura, definir boas práticas e orientar equipes de desenvolvimento na entrega de soluções robustas e escaláveis.",
-      "bullet1": "Construí aplicações full stack e serviços backend, garantindo performance e facilidade de manutenção.",
-      "bullet2": "Liderei decisões de arquitetura de software e orientei equipes para implementar sistemas escaláveis e eficientes."
+      "date": "Janeiro 2025 – Março 2026",
+      "desc": "Promovido a Arquiteto de Software para liderar a estratégia de arquitetura, definir boas práticas e orientar equipes de desenvolvimento na entrega de soluções robustas e escaláveis.",
+      "bullet1": "Liderei decisões de arquitetura de software e orientei equipes para implementar sistemas escaláveis e eficientes."
+    },
+    "idsFullstack": {
+      "role": "Desenvolvedor Full Stack",
+      "company": "IDS Software e Assessoria",
+      "date": "Junho 2022 – Dezembro 2024",
+      "desc": "Desenvolvimento de aplicações web completas (end-to-end), do front-end ao back-end.",
+      "bullet1": "Construí aplicações full stack e serviços backend, garantindo performance e facilidade de manutenção."
     }
   },
   "bigProjects": {
-    "title": "Outros Projetos",
-    "subtitle": "PROJETOS QUE COLABOREI DIRETAMENTE NA CONSTRUÇÃO",
+    "title": "Projetos",
+    "subtitle": "PROJETOS ACADÊMICOS, DE EXTENSÃO E PESSOAIS",
     "idr": {
       "name": "IDR",
       "desc": "Desenvolvimento de software para o Instituto Paranaense de Desenvolvimento Rural (IDR-Paraná) através do projeto de extensão Bowser na Universidade Tecnológica Federal do Paraná (UTFPR).",
@@ -55,8 +67,16 @@
     },
     "dainf": {
       "name": "DAINF-UTFPR",
-      "desc": "Desenvolvimento de um sistema de inventário e gestão para o Departamento Acadêmico de Informática da Universidade Tecnológica Federal do Paraná (DAINF-UTFPR), agilizando o controle de equipamentos, alocação de recursos e operações de laboratórios para maior eficiência.",
+      "desc": "Desenvolvimento de um sistema de inventário e gestão para o Departamento Acadêmico de Informática da Universidade Tecnológica Federal do Paraná (DAINF-UTFPR), agilizando o controle de equipamentos, alocação de recursos e operações de laboratórios. Angular 20, Spring Boot 3 (Java 21), Docker e Jenkins.",
       "visit": "Visitar Site"
+    },
+    "delfos": {
+      "name": "Delfos",
+      "desc": "TCC na UTFPR: sistema com IA para indexar, rotular e consultar documentos corporativos por chat, usando RAG com HyDE. Dois apps Next.js (admin e chat), pipeline assíncrono de ingestão em Python via RabbitMQ, serviço RAG em FastAPI e Postgres com pgvector no Supabase. Compatível com OpenAI ou Ollama."
+    },
+    "cacambeiro": {
+      "name": "Caçambeiro",
+      "desc": "Projeto pessoal: SaaS multi-tenant para empresas de locação de caçambas. Operadores gerenciam serviços, despacham motoristas e emitem faturas por um painel web; motoristas atualizam atribuições em um app mobile. Next.js, Expo, tRPC, Prisma, Supabase, BullMQ e Redis."
     }
   },
   "resume": {

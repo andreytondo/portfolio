@@ -19,35 +19,47 @@
   "skills": {
     "title": "What I do",
     "subTitle": "Building robust and scalable web applications, from microservices to containerized stacks and automation",
-    "skill1": "⚡ Full stack development: designing interactive frontends and performant backends with scalable architectures",
+    "skill1": "⚡ Full stack development: Java/Spring Boot, Angular, React/Next.js and TypeScript, designing interactive frontends and performant backends with scalable architectures",
     "skill2": "⚡ Cloud & integrations: implementing APIs, databases, and services",
     "skill3": "⚡ System design & architecture: leading software architecture decisions, mentoring teams, and ensuring maintainable solutions"
   },
   "education": {
-    "title": "Education", 
+    "title": "Education",
     "utfpr": {
       "schoolName": "Universidade Tecnológica Federal do Paraná",
       "subHeader": " Technologist in Systems Analysis and Development",
-      "duration": "March 2023 - July 2026",
+      "duration": "March 2023 - December 2026",
       "desc": "Gained practical experience through projects and internships, enhancing my skills in full stack development, system architecture and project management.",
       "bullet1": "Developed a wide range of different projects using various technologies.",
       "bullet2": "Collaborated with cross-functional teams to deliver high-quality software solutions, ensuring adherence to best practices and coding standards."
     }
   },
   "work": {
-    "title": "Work Experiences", 
-    "ids": {
-      "role": "Full Stack Developer → Software Architect",
+    "title": "Work Experiences",
+    "cit": {
+      "role": "Full Stack Developer",
+      "company": "CI&T",
+      "date": "March 2026 – Present",
+      "desc": "Full Stack Developer building and evolving web applications."
+    },
+    "idsArchitect": {
+      "role": "Software Architect",
       "company": "IDS Software e Assessoria",
-      "date": "June 2022 – Present",
-      "desc": "Started as a Full Stack Developer building end-to-end web applications, later promoted to Software Architect to lead architecture strategy, define best practices, and guide development teams in delivering robust, scalable software solutions.",
-      "bullet1": "Built full stack applications and backend services, ensuring performance and maintainability.",
-      "bullet2": "Led software architecture decisions and mentored teams to implement scalable, efficient systems."
+      "date": "January 2025 – March 2026",
+      "desc": "Promoted to Software Architect to lead architecture strategy, define best practices, and guide development teams in delivering robust, scalable software solutions.",
+      "bullet1": "Led software architecture decisions and mentored teams to implement scalable, efficient systems."
+    },
+    "idsFullstack": {
+      "role": "Full Stack Developer",
+      "company": "IDS Software e Assessoria",
+      "date": "June 2022 – December 2024",
+      "desc": "Built end-to-end web applications, from front end to back end.",
+      "bullet1": "Built full stack applications and backend services, ensuring performance and maintainability."
     }
   },
   "bigProjects": {
-    "title": "Other Projects",
-    "subtitle": "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+    "title": "Projects",
+    "subtitle": "ACADEMIC, EXTENSION AND PERSONAL PROJECTS",
     "idr": {
       "name": "IDR",
       "desc": "Software development for the Paraná Institute of Rural Development (IDR-Paraná) through the Bowser extension project at the Federal University of Technology – Paraná (UTFPR).",
@@ -55,8 +67,16 @@
     },
     "dainf": {
       "name": "DAINF-UTFPR",
-      "desc": "Development of an inventory and management system for the Academic Department of Computer Science of the Federal University of Technology (DAINF-UTFPR), streamlining equipment tracking, resource allocation, and lab operations for improved efficiency.",
+      "desc": "Development of an inventory and management system for the Academic Department of Computer Science of the Federal University of Technology – Paraná (DAINF-UTFPR), streamlining equipment tracking, resource allocation, and lab operations. Angular 20, Spring Boot 3 (Java 21), Docker and Jenkins.",
       "visit": "Visit Website"
+    },
+    "delfos": {
+      "name": "Delfos",
+      "desc": "Capstone project at UTFPR: an AI system to index, label and query corporate documents through chat, using RAG with HyDE. Two Next.js apps (admin and chat), an asynchronous Python ingestion pipeline over RabbitMQ, a FastAPI RAG service and Postgres with pgvector on Supabase. Works with OpenAI or Ollama."
+    },
+    "cacambeiro": {
+      "name": "Caçambeiro",
+      "desc": "Personal project: multi-tenant SaaS for dumpster-rental companies. Operators manage jobs, dispatch drivers and issue invoices from a web dashboard; drivers update assignments in a mobile app. Next.js, Expo, tRPC, Prisma, Supabase, BullMQ and Redis."
     }
   },
   "resume": {

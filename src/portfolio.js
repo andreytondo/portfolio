@@ -31,7 +31,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/andreytondo",
-  linkedin: "https://linkedin.com/in/andrey-tondo-727436250",
+  linkedin: "https://linkedin.com/in/andreytondo",
   gmail: "andreytondo0408@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -111,12 +111,26 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "work.ids.role",
-      company: "work.ids.company",
+      role: "work.cit.role",
+      company: "work.cit.company",
+      date: "work.cit.date",
+      desc: "work.cit.desc"
+    },
+    {
+      role: "work.idsArchitect.role",
+      company: "work.idsArchitect.company",
       companylogo: require("./assets/images/idsLogo.png"),
-      date: "work.ids.date",
-      desc: "work.ids.desc",
-      descBullets: ["work.ids.bullet1", "work.ids.bullet2"]
+      date: "work.idsArchitect.date",
+      desc: "work.idsArchitect.desc",
+      descBullets: ["work.idsArchitect.bullet1"]
+    },
+    {
+      role: "work.idsFullstack.role",
+      company: "work.idsFullstack.company",
+      companylogo: require("./assets/images/idsLogo.png"),
+      date: "work.idsFullstack.date",
+      desc: "work.idsFullstack.desc",
+      descBullets: ["work.idsFullstack.bullet1"]
     }
   ]
 };
@@ -136,6 +150,19 @@ const bigProjects = {
   subtitle: "bigProjects.subtitle",
   projects: [
     {
+      projectName: "bigProjects.delfos.name",
+      projectDesc: "bigProjects.delfos.desc"
+    },
+    {
+      projectName: "bigProjects.cacambeiro.name",
+      projectDesc: "bigProjects.cacambeiro.desc"
+    },
+    {
+      image: require("./assets/images/dainfLogo.png"),
+      projectName: "bigProjects.dainf.name",
+      projectDesc: "bigProjects.dainf.desc"
+    },
+    {
       image: require("./assets/images/idrLogo2.png"),
       projectName: "bigProjects.idr.name",
       projectDesc: "bigProjects.idr.desc",
@@ -145,11 +172,6 @@ const bigProjects = {
           url: "https://www.idrparana.pr.gov.br/"
         }
       ]
-    },
-    {
-      image: require("./assets/images/dainfLogo.png"),
-      projectName: "bigProjects.dainf.name",
-      projectDesc: "bigProjects.dainf.desc"
     }
   ],
   display: true // Set false to hide this section, defaults to true
