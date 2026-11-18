@@ -113,6 +113,7 @@ const workExperiences = {
     {
       role: "work.cit.role",
       company: "work.cit.company",
+      companylogo: require("./assets/images/citLogo.png"),
       date: "work.cit.date",
       desc: "work.cit.desc"
     },
