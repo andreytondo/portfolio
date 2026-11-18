@@ -26,7 +26,10 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          const edges = (response.data.user.pinnedItems.edges || []).filter(
+            v => v && v.node && v.node.id && v.node.stargazers
+          );
+          setrepoFunction(edges.length > 0 ? edges : "Error");
         })
         .catch(function (error) {
           console.error(
