@@ -151,10 +151,12 @@ const bigProjects = {
   subtitle: "bigProjects.subtitle",
   projects: [
     {
+      image: require("./assets/images/delfosLogo.png"),
       projectName: "bigProjects.delfos.name",
       projectDesc: "bigProjects.delfos.desc"
     },
     {
+      image: require("./assets/images/cacambeiroLogo.png"),
       projectName: "bigProjects.cacambeiro.name",
       projectDesc: "bigProjects.cacambeiro.desc"
     },
